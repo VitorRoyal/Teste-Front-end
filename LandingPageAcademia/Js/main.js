@@ -13,6 +13,13 @@ function menuAparecer() {
 window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     nav.classList.toggle("sticky", window.scrollY > 0);
+
+    let menuMobile = document.querySelector('.mobile__menu');
+    let menuIcon = document.querySelector('.icon');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        menuIcon.src = "./Assets/menu_white_36dp.svg";
+    }
 });
 
 const botao = document.querySelector('.botao__hello');
