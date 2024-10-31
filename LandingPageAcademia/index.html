@@ -15,19 +15,34 @@
                 <a href="#"><img src="Assets/logo.png" alt="logo da academia"></a>
             </div>
             <ul class="cabecalho__links">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#">Program</a></li>
-                <li class="link"><a href="#">Service</a></li>
-                <li class="link"><a href="#">About</a></li>
-                <li class="link"><a href="#">Community</a></li>
+                <li class="link"><a href="#Home">Home</a></li>
+                <li class="link"><a href="#Program">Program</a></li>
+                <li class="link"><a href="#Service">Service</a></li>
+                <li class="link"><a href="#About">About</a></li>
+                <li class="link"><a href="#Community">Community</a></li>
+            </ul>
+            <button class="botao  botao__hello">Join now</button>
+
+            <div class="mobile__menu__icon">
+                <button onclick="menuAparecer()"><img class="icon" src="./Assets/menu_white_36dp.svg" alt="menu de hamburguer"></button>
+            </div>
+        </nav>
+
+        <div class="mobile__menu">
+            <ul class="mobile__menu__links">
+                <li class="link"><a href="#Home">Home</a></li>
+                <li class="link"><a href="#Program">Program</a></li>
+                <li class="link"><a href="#Service">Service</a></li>
+                <li class="link"><a href="#About">About</a></li>
+                <li class="link"><a href="#Community">Community</a></li>
             </ul>
             <button class="botao">Join now</button>
-        </nav>
+        </div>
     </header>
 
 
     <main>
-        <section class="section__container principal__container">
+        <section class="section__container principal__container" id="Home">
             <div class="principal__conteudo">
                 <span class="bg__blur"></span>
                 <span class="bg__blur principal__blur"></span>
@@ -46,7 +61,7 @@
         </section>
 
 
-        <section class="section__container explorar__container">
+        <section class="section__container explorar__container" id="Program">
             <div class="explorar__conteudo">
                 <h2 class="section__cabecalho">EXPLORE OUR PROGRAM</h2>
                 <div class="explorar__nav">
@@ -90,7 +105,7 @@
             </div>
         </section>
 
-        <section class="section__container aula__container">
+        <section class="section__container aula__container" id="Service">
             <div class="aula__imagem">
                 <span class="bg__blur"></span>
                 <img src="./Assets/class-1.jpg" alt="homem se exercitando" class="aula__imagem1">
@@ -109,7 +124,7 @@
             </div>
         </section>
 
-        <section class="section__container inscrever__container" >
+        <section class="section__container inscrever__container" id="About">
             <h2 class="section__cabecalho">WHY JOIN US ?</h2>
             <p class="section__subcabecalho">
                 Our diverse membership base creates a friendly and supportive
@@ -185,7 +200,7 @@
             </div>
         </section>
 
-        <section class="review">
+        <section class="review" id="Community">
             <div class="section__container review__container">
                 <span><i class="ri-double-quotes-r"></i></span>
                 <div class="review__conteudo">
@@ -261,5 +276,7 @@
     <div class="rodape__direitos">
         &copy; 2024 Fitclub and Vitor De Souza. All rights reserved.
     </div>
+
+    <script src="./Js/main.js"></script>
 </body>
 </html>
